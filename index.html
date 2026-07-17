@@ -9,7 +9,12 @@
 <meta property="og:title" content="Bou Leakhena — Junior Web Developer">
 <meta property="og:description" content="A premium, interactive developer portfolio built with Vue.js, Node.js and Express.js.">
 <meta property="og:type" content="website">
-
+<!-- Favicon -->
+<link rel="icon" href="images/logo/favicon.ico" sizes="any">
+<!-- SVG Logo -->
+<link rel="icon" type="image/svg+xml" href="images/logo/BL-logo.svg">
+<!-- Apple -->
+<link rel="apple-touch-icon" href="images/logo/BL-logo-1024.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -37,7 +42,9 @@
 <div id="scroll-progress" aria-hidden="true"></div>
 
 <div class="nav-wrap" id="navWrap">
-  <a href="#home" class="nav-logo"><span>BL</span></a>
+  <a href="#home" class="logo">
+    <img src="images/logo/BL-logo.svg" alt="Bou Leakhena Logo">
+</a>
   <div class="nav-pill">
     <nav class="nav-links" id="navLinks" aria-label="Primary">
       <a href="#about" data-nav class="active">About</a>
@@ -143,39 +150,34 @@
   <!-- ============ ABOUT ============ -->
   <section id="about">
     <div class="container about-grid">
-      <div class="glass profile-card reveal">
-        <div class="mini-orbit">
-          <div class="orbit-glow"></div>
-          <div class="ring-spin"></div>
-          <div class="m-dot"></div>
-          <div class="m-dot b"></div>
-          <div class="core">
-            <img class="avatar-photo" src="images/profile2.png" alt="Bou Leakhena">
-          </div>
+      <div class="glass profile-card profile-card-v2 reveal">
+        <div class="about-photo-frame">
+          <img class="avatar-photo" src="images/profile2.png" alt="Bou Leakhena">
         </div>
         <div class="profile-name">Bou Leakhena</div>
-        <div class="profile-role">Junior Web Developer</div>
+        <div class="profile-role grad-word">Junior Web Developer</div>
+        <div class="profile-underline"></div>
 
-        <div class="facts-grid">
-          <div class="fact">
-            <span class="fk"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
-            <div class="k">Location</div><div class="v">Phnom Penh</div>
+        <div class="facts-list">
+          <div class="fact-row">
+            <span class="fk" style="background:rgba(139,92,246,0.22);"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+            <div class="fact-text"><div class="k">Location</div><div class="v">Phnom Penh, Cambodia</div></div>
           </div>
-          <div class="fact">
-            <span class="fk"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2"><path d="M22 10L12 5 2 10l10 5 10-5zM6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg></span>
-            <div class="k">University</div><div class="v">I.T - NUM</div>
+          <div class="fact-row">
+            <span class="fk" style="background:rgba(6,182,212,0.22);"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2"><path d="M22 10L12 5 2 10l10 5 10-5zM6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg></span>
+            <div class="fact-text"><div class="k">University</div><div class="v">National University of Management</div></div>
           </div>
-          <div class="fact">
-            <span class="fk"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span>
-            <div class="k">Training</div><div class="v">700 hours</div>
+          <div class="fact-row">
+            <span class="fk" style="background:rgba(124,58,237,0.22);"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span>
+            <div class="fact-text"><div class="k">Training</div><div class="v">700-Hour Scholarship (ANT TC)</div></div>
           </div>
-          <div class="fact">
-            <span class="fk"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span>
-            <div class="k">Availability</div><div class="v">Full-time / Intern</div>
+          <div class="fact-row">
+            <span class="fk" style="background:rgba(34,197,94,0.22);"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span>
+            <div class="fact-text"><div class="k">Availability</div><div class="v">Full-time / Internship</div></div>
           </div>
         </div>
 
-        <a href="images/cv/Bou leakhena_Full-Stack Developer.pdf" class="btn btn-glass" download style="width:100%; justify-content:center;">
+        <a href="images/cv/Bou Leakhena_CV.pdf" class="btn btn-glass" download style="width:100%; justify-content:center;">
           Download CV
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14"/></svg>
         </a>
@@ -187,11 +189,40 @@
         <p>I'm a junior web developer from Phnom Penh, Cambodia, currently pursuing a <strong>Bachelor of Information Technology</strong> at the National University of Management while completing an intensive 700-hour scholarship program at ANT Technology Training Center provided by the Ministry of Post and Telecommunications (MPTC). My toolkit centers on <strong class="Color1">Vue.js</strong> for interfaces and <strong class="Color2">Node.js</strong> / <strong class="Color3">Express.js</strong> with <strong class="Color4">MySQL</strong> underneath — but what I care about most is whether the end result actually feels good to use.</p>
         <p>I've built responsive interfaces and full-stack features across two team projects, from authentication flows to RESTful APIs and CRUD operations. I like clean systems, thoughtful edge cases, and interfaces that don't need an explanation.</p>
 
-        <div class="tech-float-row">
-          <span class="tech-float-card" style="animation-delay:0s;"><span class="fi" style="background:linear-gradient(135deg,#3B82F6,#06B6D4);">V</span>Vue.js</span>
-          <span class="tech-float-card" style="animation-delay:.6s;"><span class="fi" style="background:linear-gradient(135deg,#22C55E,#06B6D4);">N</span>Node.js</span>
-          <span class="tech-float-card" style="animation-delay:1.2s;"><span class="fi" style="background:  linear-gradient(135deg, #8B5CF6, #A855F7);">E</span>Express.js</span>
-          <span class="tech-float-card" style="animation-delay:1.8s;"><span class="fi" style="background:linear-gradient(135deg,#3B82F6,#7C3AED);">M</span>MySQL</span>
+        <p class="eyebrow highlights-eyebrow">Highlights</p>
+        <div class="highlights-grid">
+          <div class="highlight-card">
+            <span class="hc-icon" style="background:rgba(139,92,246,0.16); color:#A78BFA;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.5-2 5-2 5s3.5-.5 5-2c.83-.83.83-2.17 0-3a2.12 2.12 0 00-3 0z"/><path d="M12 15l-3-3a22 22 0 016.11-8.53C19.5 1.06 22.94 1.5 22.94 1.5s.44 3.44-2.97 7.83A22 22 0 0112 15z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+            </span>
+            <div class="hc-number">3+</div>
+            <div class="hc-label" style="color:#A78BFA;">Team Projects</div>
+            <p class="hc-desc">Modern web applications with real-world functionality</p>
+          </div>
+          <div class="highlight-card">
+            <span class="hc-icon" style="background:rgba(6,182,212,0.16); color:#22D3EE;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+            </span>
+            <div class="hc-number">700+</div>
+            <div class="hc-label" style="color:#22D3EE;">Training Hours</div>
+            <p class="hc-desc">Intensive program focused on practical development</p>
+          </div>
+          <div class="highlight-card">
+            <span class="hc-icon" style="background:rgba(34,197,94,0.16); color:#4ADE80;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 4L2 12l6 8M16 4l6 8-6 8"/></svg>
+            </span>
+            <div class="hc-number">Full-Stack</div>
+            <div class="hc-label" style="color:#4ADE80;">Developer</div>
+            <p class="hc-desc">Passionate about building clean, useful, and scalable web applications</p>
+          </div>
+        </div>
+
+        <p class="eyebrow highlights-eyebrow">Technologies I Use</p>
+        <div class="tech-pill-row">
+          <span class="tech-pill" style="animation-delay:0s;"><span class="tp-icon" style="color:#41B883;"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M2 3h4l6 10 6-10h4L12 21z"/></svg></span>Vue.js</span>
+          <span class="tech-pill" style="animation-delay:.6s;"><span class="tp-icon" style="color:#68A063;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4.6v10.8L12 22l-8-4.6V6.6z"/><path d="M12 22V12M20 6.6L12 12 4 6.6"/></svg></span>Node.js</span>
+          <span class="tech-pill" style="animation-delay:1.2s;"><span class="tp-icon" style="color:#A855F7;">E</span>Express.js</span>
+          <span class="tech-pill" style="animation-delay:1.8s;"><span class="tp-icon" style="color:#3B82F6;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.66 3.58 3 8 3s8-1.34 8-3V6"/><path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg></span>MySQL</span>
         </div>
       </div>
     </div>
@@ -410,7 +441,7 @@
         <h4>Email</h4><span>Send a message</span>
         <span class="fc-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
       </a>
-      <a class="glass footer-card" href="images/cv/Bou leakhena_Full-Stack Developer.pdf" download>
+      <a class="glass footer-card" href="images/cv/Bou Leakhena_CV.pdf" download>
         <span class="fc-icon" style="background:rgba(139,92,246,0.18);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4B5FD" stroke-width="1.8"><path d="M6 3h9l3 3v15H6z"/><path d="M14 3v4h4"/><path d="M9 12h6M9 15h6"/></svg></span>
         <h4>Resume</h4><span>View my resume</span>
         <span class="fc-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
